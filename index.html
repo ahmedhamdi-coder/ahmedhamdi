@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Hamdi | Frontend Developer</title>
+    <meta name="description" content="A premium 3D personal portfolio featuring a modern, dark aesthetic with smooth animations.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-text">Loading Experience...</div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">AHMED.</div>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Work</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div id="canvas-container"></div>
+            <div class="hero-content">
+                <h1 class="hero-title"><span class="reveal-text">Ahmed</span><br><span class="reveal-text">Hamdi</span></h1>
+                <p class="hero-subtitle reveal-text-delay">Frontend Developer based in Egypt. Crafting premium digital experiences.</p>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">01 // Identity</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text-wrapper">
+                        <p class="about-text p-large fade-up">I am a frontend developer and UI/UX designer with a passion for creating immersive, high-performance web applications. I believe in the power of minimalism paired with striking visual elements.</p>
+                        <p class="about-text fade-up delay-1">My work focuses on bridging the gap between design and engineering, ensuring that every interaction feels natural, elegant, and perfectly executed.</p>
+                        <a href="Ahmed_Hamdi_CV.pdf" download class="btn-primary fade-up delay-2" style="margin-top: 1.5rem;">
+                            <span>Download CV</span>
+                            <i class="ph ph-download-simple"></i>
+                        </a>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item fade-up delay-2">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item fade-up delay-3">
+                            <span class="stat-num">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">02 // Selected Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects will be dynamically injected here by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">03 // Expertise</span>
+                    <h2 class="section-title">Core Skills</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-category fade-up">
+                        <h3 class="category-title">Frontend Development</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML & CSS</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Bootstrap</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category fade-up delay-1">
+                        <h3 class="category-title">Tools</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS Code</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Figma</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-wrapper glass-card fade-up">
+                    <div class="contact-info">
+                        <span class="section-subtitle">04 // Get In Touch</span>
+                        <h2 class="section-title">Let's craft something amazing.</h2>
+                        <p class="contact-text">Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:ahmed.hamdi.tech@gmail.com" class="contact-link"><i class="ph ph-envelope-simple"></i> ahmed.hamdi.tech@gmail.com</a>
+                            <a href="https://wa.me/201021284429" target="_blank" class="contact-link" style="margin-top:-0.5rem;"><i class="ph ph-whatsapp-logo"></i> +20 102 128 4429</a>
+                            <div class="social-links">
+                                <a href="https://github.com/ahmedhamdi-coder" target="_blank" class="social-icon"><i class="ph ph-github-logo"></i></a>
+                                <a href="https://www.linkedin.com/in/ahmed-hamdi-frontend" target="_blank" class="social-icon"><i class="ph ph-linkedin-logo"></i></a>
+                                <a href="https://x.com/codecifer" target="_blank" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                                <a href="https://www.instagram.com/itsahmed_xx" target="_blank" class="social-icon"><i class="ph ph-instagram-logo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Ahmed Hamdi. Designed & Built with passion.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
